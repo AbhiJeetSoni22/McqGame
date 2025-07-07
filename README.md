@@ -1,12 +1,85 @@
-# React + Vite
+# MCQ Game
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern multiple-choice quiz game built with **React**, **Vite**, **Tailwind CSS**, and **Framer Motion**.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Interactive quiz with animated transitions
+- Score tracking and progress bar
+- Responsive design with Tailwind CSS
+- Smooth page navigation using React Router
+- Animated backgrounds and effects
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) (v18 or newer recommended)
+- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
+
+### Installation
+
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/your-username/mcqgame.git
+   cd mcqgame
+   ```
+
+2. Install dependencies:
+   ```sh
+   npm install
+   # or
+   yarn install
+   ```
+
+### Running Locally
+
+Start the development server:
+```sh
+npm run dev
+# or
+yarn dev
+```
+Open [http://localhost:5173](http://localhost:5173) in your browser.
+
+### Building for Production
+
+To build the app for production:
+```sh
+npm run build
+# or
+yarn build
+```
+The output will be in the `dist` folder.
+
+### Preview Production Build
+
+```sh
+npm run preview
+# or
+yarn preview
+```
+
+## Deployment
+
+You can deploy the `dist` folder to any static hosting service (e.g., Vercel, Netlify).
+
+For **Vercel**:
+- Set the **build command** to `vite build`
+- Set the **output directory** to `dist`
+- Set the **install command** to `npm install`
+
+## Project Structure
+
+```
+src/
+  assets/           # Static assets
+  components/       # Reusable components (Navbar, Question, Score)
+  data/             # Quiz questions data
+  pages/            # Page components (Home, Quiz)
+  App.jsx           # Main app component
+  main.jsx          # Entry point
+  index.css         # Global styles
+public/
+  vite.svg          # Favicon
+```
